@@ -1,0 +1,52 @@
+---
+title: "12 - R Markdown"
+author: "Erik Pihl"
+date: "2026-11-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### A brief introduction explaining what R Markdown is (Introduction)
+
+R Markdown is a tool that lets you combine written text, R code, and also mathematical equations into one document. What it can do is be used to create reports that not only include the results from data analysis but also explanations. A benefit of using this is that it makes it easier to organize information and also see how the results were produced.
+
+### At least one narrative paragraph (Markdown text)
+
+One big advantage of using R Markdown is, as mentioned, the user is able to include written explanations and also the R code in one document. Also, as mentioned, this makes it a lot easier to see and understand the data and how results were calculated. It is great to use, especially when working on assignments, because instead of having to go back and forth, everything is in one place.
+
+### At least one LaTeX math expression (e.g., inline $\\alpha + \\beta = \\gamma$ and a displayed equation).
+
+Example of inline equation is $5 + 10 = 15$.
+
+Example of displayed equation is: 
+
+$$
+y = mx + b
+$$
+
+### At least two executable R code chunks that:
+### Load a library or dataset.
+### Run a simple analysis or generate a plot (e.g., summary statistics or ggplot2 chart).
+
+The first code loads mtcars, and displays the first six rows
+
+```{r load_data}
+data(mtcars)
+head(mtcars)
+```
+
+The second code calculates the summary statistics for mtcars from the dataset
+
+```{r summary_stats}
+summary(mtcars)
+```
+
+### A concluding reflection on your experience using R Markdown vs. writing plain reports.
+
+My experience using R Markdown makes it much easier to combine several elements like R code, written explanations, and also mathematical equations into one document if I compare it to writing a normal report. The biggest advantage is that you are able to follow the results and how they were produced, and also be able to add to it. I have been using R Markdown to work in another class, but never knew how to create one, so the timing of this assignment is perfect because I will be having to use this for the other class in the upcoming final project.
+
+
+
